@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .nav-btn {
+        transition: all linear 0.2s;
+      }
+      .s-head{
+        -webkit-text-stroke: 2px #000;
+        color: transparent;
+      }
+      .btn{
+        transition: all linear 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full h-screen">
+      <div
+        class="loading-top absolute w-[100vw] h-[50vh] bg-black z-30"
+      ></div>
+      <div
+        class="loading-bottom absolute bottom-0 w-[100vw] h-[50vh] bg-black z-30"
+      >
+        <img
+          src="https://assets-global.website-files.com/61dd9ddd76c6a058a47a4c57/623374ba0955641189595aea_Logo_Bazil-white.svg"
+          class="absolute bottom-5 right-5"
+        />
+      </div>
+      <div class="main top-0 w-full h-screen px-[100px] py-5 relative">
+        <nav class="flex w-full items-center justify-between">
+          <img
+            src="https://assets-global.website-files.com/61dd9ddd76c6a058a47a4c57/61defd565b95860877484fe4_Logo_Bazil.svg"
+            alt=""
+          />
+          <div class="flex items-center gap-10">
+            <h3 class="menu-item font-semibold text-md cursor-pointer">
+              Design
+            </h3>
+            <h3 class="menu-item font-semibold text-md cursor-pointer">
+              Photos
+            </h3>
+            <h3 class="menu-item font-semibold text-md cursor-pointer">
+              Look Book
+            </h3>
+            <div class="flex gap-2">
+              <h3 class="lng font-semibold text-md cursor-pointer">FR</h3>
+              <h3 class="lng font-semibold text-md cursor-pointer">EN</h3>
+            </div>
+            <div
+              class="nav-btn bg-black text-xl text-white px-5 py-3 rounded-lg cursor-pointer origin-right"
+            >
+              hello@bazil.fr
+            </div>
+          </div>
+        </nav>
+        <div class="f-text h-[fit-content]">
+          <h1
+            class="f-head text-[15vw] absolute z-20 font-bold text-center tracking-tighter capitalize cursor-pointer"
+          >
+            webdesigner
+          </h1>
+        </div>
+        <div class="s-text">
+            <h1
+          class="s-head text-[13vw] font-bold text-center tracking-tighter capitalize cursor-pointer absolute top-1/2 -z-10"
+        >
+          & photographe
+        </h1>
+        </div>
+        <div>
+            <img
+          id="photo"
+          class="w-1/3 h-4/6 absolute bottom-[12%] left-1/2 -translate-x-[50%]"
+          src="https://assets-global.website-files.com/61dd9ddd76c6a058a47a4c57/627a6ebf32659497910541fb_Photo_profil2-p-800.webp"
+        />
+        </div>
+       <div class="w-full absolute bottom-10 left-1/2 -translate-x-[50%] gap-5 flex items-center justify-center z-20">
+        <button class="btn px-5 py-2 bg-black text-white rounded-md border-2 border-black">Vous avez besoin d'un desginer</button>
+        <button class="btn px-5 py-2 text-black rounded-md border-2 border-black">Vous avez besoin d'un photographe</button>
+       </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
