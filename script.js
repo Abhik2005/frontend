@@ -57,6 +57,12 @@ function loadingPage() {
     duration: 0.8,
     delay: 0.5,
   });
+  gsap.to(".s-head , .f-head",{
+    x: 0,
+    duration: 1.5,
+    opacity: 1,
+    delay: 1.05
+  })
 }
 
 loadingPage();
@@ -65,3 +71,10 @@ Shery.makeMagnet("#photo", {
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
   });
+
+  document.querySelector(".f-head").addEventListener("mouseenter",function(){
+    document.querySelector(".s-head").style.color = "#000";
+  })
+  document.querySelector(".f-head").addEventListener("mouseleave",function(){
+    document.querySelector(".s-head").style.color = "transparent ";
+  })
